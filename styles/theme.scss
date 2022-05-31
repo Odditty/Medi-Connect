@@ -1,0 +1,44 @@
+@mixin common-theme {
+  --accent-color: "colors.blue.500";
+  --accent-light-color: "colors.blue.400";
+  --accent-dark-color: "colors.blue.600";
+  --accent-contrast-color: "colors.white";
+}
+
+@mixin dark-theme {
+  --primary-color: #000;
+  --primary-light-color: "colors.dark.600";
+  --primary-dark-color: "colors.true-gray.800";
+  --secondary-color: #fff;
+  --secondary-light-color: "colors.true-gray.500";
+  --secondary-dark-color: "colors.true-gray.100";
+  --error: "colors.red.700";
+  --success: "colors.green.700";
+  --warning: "colors.yellow.700";
+  --info: "colors.blue.700";
+}
+
+@mixin light-theme {
+  --primary-color: #fff;
+  --primary-light-color: "colors.true-gray.50";
+  --primary-dark-color: "colors.true-gray.100";
+  --secondary-color: #000;
+  --secondary-light-color: "colors.true-gray.400";
+  --secondary-dark-color: "colors.true-gray.900";
+  --error: "colors.red.600";
+  --success: "colors.green.600";
+  --warning: "colors.yellow.600";
+  --info: "colors.blue.600";
+}
+
+body {
+  @include common-theme;
+}
+
+body.dark {
+  @include dark-theme;
+}
+
+body.light {
+  @include light-theme;
+}
