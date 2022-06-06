@@ -23,7 +23,7 @@ export default function HomeCircleItem({ title, image, link }: Props) {
               />
             </div>
           </div>
-          <h4 className="text-center">{title}</h4>
+          <h4 className="text-center text-sm md:text-md">{title}</h4>
           <h5 className="text-sm text-center text-accent">Consult Now</h5>
         </div>
       </Link>

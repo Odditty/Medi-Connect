@@ -15,6 +15,7 @@ export default defineConfig({
           "accentLight": "var(--accent-light-color)",
           "accentDark": "var(--accent-dark-color)",
           "accentContrast": "var(--accent-contrast-color)",
+          "accentContrastDark": "var(--accent-contrast-black-color)",
           "error": "var(--error)",
           "warning": "var(--warning)",
           "info": "var(--info)",

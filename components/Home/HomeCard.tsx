@@ -25,7 +25,7 @@ export default function HomeCard({
       }}
     >
       <Link href={link}>
-        <h2 className="flex items-end text-xl md:text-4xl break-words space-x-4 cursor-pointer z-2">
+        <h2 className="flex items-end text-xl text-accentContrastDark md:text-4xl break-words space-x-4 cursor-pointer z-2">
           <span dangerouslySetInnerHTML={{ __html: mainTitle }} />
           <span className="bg-accentDark h-10 w-10 relative flex justify-center items-center rounded-full">
             <span className="text-2xl absolute top-1 bottom-0 text-accentContrast">
