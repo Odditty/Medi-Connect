@@ -10,7 +10,7 @@ import { homeCardList } from "../utils/HomeCardList";
 import { healthConcerns } from "../utils/HomeHealthConcers";
 
 const Home: NextPage = () => {
-  const [theme, toggleTheme] = useThemeContext();
+  const { theme, toggleTheme } = useThemeContext();
 
   return (
     <div>
