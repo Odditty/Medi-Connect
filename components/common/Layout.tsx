@@ -10,7 +10,7 @@ export default function CommonLayout({ children }: Props) {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className="min-h-[90vh]">{children}</main>
       <Footer />
     </>
   );

@@ -1,8 +1,8 @@
 @mixin common-theme {
-  --accent-color: "colors.blue.500";
-  --accent-light-color: "colors.blue.400";
-  --accent-dark-color: "colors.blue.600";
-  --accent-contrast-color: "colors.white";
+  --accent-color: #73b6e0;
+  --accent-light-color: #a5c5da;
+  --accent-dark-color: #3599d8;
+  --accent-contrast-color: #fff;
 }
 
 @mixin dark-theme {
