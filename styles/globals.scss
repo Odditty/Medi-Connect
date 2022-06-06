@@ -81,3 +81,13 @@ a {
   @apply max-w-screen-xl;
   @apply mx-auto;
 }
+
+.input {
+  @apply border;
+  @apply border-solid;
+  @apply border-accent;
+  @apply p-2;
+  @apply rounded;
+  @apply focus:border-accentDark;
+  @apply focus:outline-none;
+}

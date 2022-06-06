@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Image from "next/image";
-import PrimaryButton from "../components/buttons/PrimaryButton";
 import SecondaryButton from "../components/buttons/SecondaryButton";
 import HeadTag from "../components/HeadTag";
 import HomeCard from "../components/Home/HomeCard";

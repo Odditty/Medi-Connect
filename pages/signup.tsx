@@ -1,13 +1,14 @@
+import type { NextPage } from "next";
 import React from "react";
 import HeadTag from "../components/HeadTag";
 
-type Props = {};
-
-export default function Signup({}: Props) {
+const Signup: NextPage = () => {
   return (
     <div>
       <HeadTag title="Signup " />
       Signup
     </div>
   );
-}
+};
+
+export default Signup;
