@@ -38,7 +38,7 @@ const Login: NextPage = () => {
                 <Link href="/">Forgot Password?</Link>
                 <Link href="/signup">Create account</Link>
               </div>
-              <PrimaryButton label="Login" />
+              <PrimaryButton label="Login" className="w-full md:w-50" />
             </form>
           </div>
         </div>
