@@ -24,11 +24,21 @@ const Signup: NextPage = () => {
             <form className="py-8 h-full w-full flex flex-col space-y-5">
               <div className="flex flex-col space-y-2">
                 <label htmlFor="Email Id">Full name</label>
-                <input className="input" type="text" placeholder="Full name" />
+                <input
+                  className="input"
+                  type="text"
+                  placeholder="Full name"
+                  required
+                />
               </div>
               <div className="flex flex-col space-y-2">
                 <label htmlFor="Email Id">Email ID</label>
-                <input className="input" type="email" placeholder="Email ID" />
+                <input
+                  className="input"
+                  type="email"
+                  placeholder="Email ID"
+                  required
+                />
               </div>
               <div className="flex flex-col space-y-2">
                 <label htmlFor="Password">Password</label>
@@ -36,6 +46,7 @@ const Signup: NextPage = () => {
                   className="input"
                   type="password"
                   placeholder="Password"
+                  required
                 />
               </div>
               <div className="flex flex-col space-y-2">
@@ -44,6 +55,7 @@ const Signup: NextPage = () => {
                   className="input"
                   type="password"
                   placeholder="Password"
+                  required
                 />
               </div>
               <div className="flex">

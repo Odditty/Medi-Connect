@@ -4,9 +4,9 @@ import SecondaryButton from "../components/buttons/SecondaryButton";
 import HeadTag from "../components/HeadTag";
 import HomeCard from "../components/Home/HomeCard";
 import HomeCircleItem from "../components/Home/HomeCircleItem";
-import { useThemeContext } from "../context/theme";
 import { homeCardList } from "../utils/HomeCardList";
 import { healthConcerns } from "../utils/HomeHealthConcers";
+import homeBannerImage from "../public/images/doctors-home.png";
 
 const Home: NextPage = () => {
   return (
@@ -24,17 +24,17 @@ const Home: NextPage = () => {
               </h1>
               <SecondaryButton
                 label="Know More"
-                click={toggleTheme}
                 className="w-50 !mt-6 text-accentContrast !hover:bg-black-500"
               />
             </div>
           </div>
           <div className="relative h-full hidden md:block">
             <Image
-              src="/images/doctors_home.png"
+              src={homeBannerImage}
               layout="fill"
               objectFit="contain"
               alt="Doctors image"
+              placeholder="blur"
             />
           </div>
         </div>
