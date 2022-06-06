@@ -6,12 +6,12 @@ import {
   useEffect,
 } from "react";
 
-type themeContextType = {
+type ThemeContextType = {
   theme: string;
   toggleTheme: () => void;
 };
 
-const themeContextDefaultValues: themeContextType = {
+const themeContextDefaultValues: ThemeContextType = {
   theme: "light",
   toggleTheme: () => {},
 };
@@ -20,7 +20,7 @@ type Props = {
   children: ReactNode;
 };
 
-const Context = createContext<themeContextType>(themeContextDefaultValues);
+const Context = createContext<ThemeContextType>(themeContextDefaultValues);
 
 export const ThemeProvider = ({ children }: Props) => {
   const [theme, setTheme] = useState("light");
@@ -63,9 +63,12 @@ export const ThemeProvider = ({ children }: Props) => {
     }
   };
 
-  return (
-    <Context.Provider value={[theme, toggleTheme]}>{children}</Context.Provider>
-  );
+  const value = {
+    theme,
+    toggleTheme,
+  };
+
+  return <Context.Provider value={value}>{children}</Context.Provider>;
 };
 
 export function useThemeContext() {
