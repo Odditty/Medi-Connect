@@ -5,7 +5,7 @@ export default function Footer() {
   const { theme, toggleTheme } = useThemeContext();
 
   return (
-    <div className="flex items-center justify-between max-w-screen-10xl mx-auto text-center text-lg text-bg-accent font-black py-4">
+    <div className="flex items-center justify-between max-w-screen-10xl mx-auto px-5 text-center text-lg text-bg-accent font-black py-4">
       <span className="flex flex-1 justify-center">
         Group 7 @{new Date().getFullYear()}
       </span>
