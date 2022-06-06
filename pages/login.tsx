@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import PrimaryButton from "../components/buttons/PrimaryButton";
 import HeadTag from "../components/HeadTag";
+import loginBannerImage from "../public/images/login-banner.jpg";
 
 const Login: NextPage = () => {
   return (
@@ -12,10 +13,11 @@ const Login: NextPage = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[100vh]">
         <div className="relative h-full w-full">
           <Image
-            src="/images/login-banner.jpg"
+            src={loginBannerImage}
             layout="fill"
             objectFit="cover"
             alt="Login Banner"
+            placeholder="blur"
           />
         </div>
         <div className="flex justify-center items-center w-full p-5">
