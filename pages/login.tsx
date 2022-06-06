@@ -11,7 +11,7 @@ const Login: NextPage = () => {
     <div>
       <HeadTag title="Login" />
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[100vh]">
-        <div className="relative h-full w-full">
+        <div className="relative min-h-30vh h-full w-full">
           <Image
             src={loginBannerImage}
             layout="fill"
