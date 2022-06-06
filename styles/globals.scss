@@ -90,4 +90,5 @@ a {
   @apply rounded;
   @apply focus:border-accentDark;
   @apply focus:outline-none;
+  @apply text-accentContrastDark;
 }
