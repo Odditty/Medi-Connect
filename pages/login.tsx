@@ -36,7 +36,7 @@ const Login: NextPage = () => {
               </div>
               <div className="flex justify-between flex-row md:flex-row">
                 <Link href="/">Forgot Password?</Link>
-                <Link href="/">Create account</Link>
+                <Link href="/signup">Create account</Link>
               </div>
               <PrimaryButton label="Login" />
             </form>

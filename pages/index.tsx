@@ -9,22 +9,9 @@ import { homeCardList } from "../utils/HomeCardList";
 import { healthConcerns } from "../utils/HomeHealthConcers";
 
 const Home: NextPage = () => {
-  const { theme, toggleTheme } = useThemeContext();
-
   return (
     <div>
       <HeadTag />
-      {/* <h1 className="text-accent text-5xl">
-        Hello this is now a {theme} theme.
-      </h1>
-      <button onClick={toggleTheme}>Toggle Theme</button>
-      <PrimaryButton
-        label="Click"
-        click={toggleTheme}
-        large
-        className="my-3 mx-5"
-      />
-      <SecondaryButton label="Click" click={toggleTheme} large /> */}
       <div className="container my-10">
         <div className="bg-gradient-to-br from-sky-600 to-blue-300 h-40vh w-full sm:rounded-lg grid grid-cols-1 md:grid-cols-2 items-center">
           <div className="flex justify-center text-left px-10 py-2">
