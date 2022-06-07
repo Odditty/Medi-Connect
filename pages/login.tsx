@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 import PrimaryButton from "../components/buttons/PrimaryButton";
 import HeadTag from "../components/HeadTag";
 import loginBannerImage from "../public/images/login-banner.jpg";
-import { signIn, useSession } from "next-auth/react";
+import { signIn, useSession, getSession } from "next-auth/react";
 import Router from "next/router";
 
 const Login: NextPage = () => {
@@ -67,5 +67,13 @@ const Login: NextPage = () => {
     </div>
   );
 };
+
+export async function getServerSideProps(context) {
+  return {
+    props: {
+      session: await getSession(context),
+    },
+  };
+}
 
 export default Login;

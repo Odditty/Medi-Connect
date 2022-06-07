@@ -11,10 +11,10 @@ export default function Header() {
         <Link href="/">MEDI-CONNECT</Link>
         {session && session.user ? (
           <div
-            className="flex items-center space-x-4 cursor-pointer"
+            className="flex items-center space-x-4 cursor-pointer bg-light-500 rounded-full px-4 py-2"
             onClick={() => signOut()}
           >
-            <span className="h-10 w-10 rounded-full overflow-hidden bg-accent">
+            <span className="h-10 w-10 rounded-full overflow-hidden ">
               {session.user.image && (
                 <img
                   src={session.user?.image}
@@ -23,7 +23,7 @@ export default function Header() {
                 />
               )}
             </span>
-            <span>{session.user?.name}</span>
+            <span className="text-sm">{session.user?.name}</span>
           </div>
         ) : (
           <div className="flex space-x-5">
