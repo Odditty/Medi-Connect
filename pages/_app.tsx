@@ -11,15 +11,15 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: any) {
   return (
     <SessionProvider session={pageProps.session}>
       <ThemeProvider>
-        <CommonLayout>
-          {Component.auth ? (
-            <Auth>
-              <Component {...pageProps} />
-            </Auth>
-          ) : (
+        {Component.auth ? (
+          <Auth>
             <Component {...pageProps} />
-          )}
-        </CommonLayout>
+          </Auth>
+        ) : (
+          <CommonLayout>
+            <Component {...pageProps} />
+          </CommonLayout>
+        )}
       </ThemeProvider>
     </SessionProvider>
   );

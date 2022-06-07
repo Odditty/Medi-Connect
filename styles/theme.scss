@@ -7,16 +7,16 @@
 }
 
 @mixin dark-theme {
-  --primary-color: rgb(17, 17, 17);
+  --primary-color: rgb(27, 25, 25);
   --primary-light-color: rgb(46, 46, 46);
   --primary-dark-color: rgb(0, 0, 0);
   --secondary-color: rgb(248, 246, 246);
   --secondary-light-color: #fff;
   --secondary-dark-color: rgb(204, 204, 204);
-  --error: "colors.red.700";
-  --success: "colors.green.700";
-  --warning: "colors.yellow.700";
-  --info: "colors.blue.700";
+  --error: #ac1717;
+  --success: #149b14;
+  --warning: #b3b311;
+  --info: rgb(19, 51, 153);
 }
 
 @mixin light-theme {
@@ -26,10 +26,10 @@
   --secondary-color: rgb(17, 17, 17);
   --secondary-light-color: rgb(46, 46, 46);
   --secondary-dark-color: rgb(0, 0, 0);
-  --error: "colors.red.600";
-  --success: "colors.green.600";
-  --warning: "colors.yellow.600";
-  --info: "colors.blue.600";
+  --error: #e71414;
+  --success: #12c212;
+  --warning: #e2e23c;
+  --info: rgb(33, 70, 194);
 }
 
 body {
