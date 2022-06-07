@@ -5,10 +5,10 @@ import React, { useEffect } from "react";
 import PrimaryButton from "../components/buttons/PrimaryButton";
 import HeadTag from "../components/HeadTag";
 import loginBannerImage from "../public/images/login-banner.jpg";
-import { getProviders, signIn, useSession } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import Router from "next/router";
 
-const Login: NextPage = ({ providers }: any) => {
+const Login: NextPage = () => {
   const { data: session } = useSession();
 
   useEffect(() => {
@@ -58,7 +58,7 @@ const Login: NextPage = ({ providers }: any) => {
               <PrimaryButton
                 label="Login With Google"
                 className="w-full md:w-50"
-                click={() => signIn(providers.id, { callbackUrl: "/" })}
+                click={() => signIn({ callbackUrl: "/" })}
               />
             </form>
           </div>
@@ -68,13 +68,4 @@ const Login: NextPage = ({ providers }: any) => {
   );
 };
 
-export async function getServerSideProps() {
-  const providers = await getProviders();
-
-  return {
-    props: {
-      providers,
-    },
-  };
-}
 export default Login;
