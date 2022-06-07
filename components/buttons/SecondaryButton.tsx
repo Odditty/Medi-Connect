@@ -25,8 +25,8 @@ export default function SecondaryButton({
   const returnComponent = () => {
     if (to) {
       return (
-        <Link className={classNames} href={to}>
-          {label}
+        <Link href={to}>
+          <a className={classNames}>{label}</a>
         </Link>
       );
     } else {

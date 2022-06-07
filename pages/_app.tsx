@@ -5,7 +5,9 @@ import { ThemeProvider } from "../context/theme";
 import CommonLayout from "../components/common/Layout";
 import { SessionProvider, signIn, useSession } from "next-auth/react";
 import { useEffect } from "react";
-function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
+import Loading from "../components/common/Loading";
+
+function MyApp({ Component, pageProps: { session, ...pageProps } }: any) {
   return (
     <SessionProvider session={pageProps.session}>
       <ThemeProvider>
@@ -37,7 +39,7 @@ function Auth({ children }: any) {
 
   // Session is being fetched, or no user.
   // If no user, useEffect() will redirect.
-  return <div>Loading...</div>;
+  return <Loading />;
 }
 
 export default MyApp;

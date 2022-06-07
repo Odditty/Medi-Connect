@@ -25,6 +25,7 @@ const Home: NextPage = () => {
               <SecondaryButton
                 label="Know More"
                 className="w-50 !mt-6 text-accentContrast !hover:bg-black-500"
+                to="/dashboard"
               />
             </div>
           </div>
