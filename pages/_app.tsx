@@ -1,11 +1,12 @@
 import "../styles/globals.scss";
-import type { AppProps } from "next/app";
+// import type { AppProps } from "next/app";
 import "windi.css";
 import { ThemeProvider } from "../context/theme";
 import CommonLayout from "../components/common/Layout";
 import { SessionProvider, signIn, useSession } from "next-auth/react";
 import { useEffect } from "react";
 import Loading from "../components/common/Loading";
+import Router from "next/router";
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: any) {
   return (
@@ -30,7 +31,7 @@ function Auth({ children }: any) {
   const isUser = !!session?.user;
   useEffect(() => {
     if (status === "loading") return;
-    if (!isUser) signIn();
+    if (!isUser) Router.push("/");
   }, [isUser, status]);
 
   if (isUser) {

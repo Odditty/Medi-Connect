@@ -22,7 +22,7 @@ function Sidebar({}: Props) {
   const { theme, toggleTheme } = useThemeContext();
 
   return (
-    <div className="flex w-30 px-5 py-8 shadow-md dark:shadow-gray-800">
+    <div className="flex w-20 sm:w-30 px-5 py-8 shadow-md dark:shadow-gray-800">
       <div className="flex flex-1 flex-col items-center">
         <div className="py-10 border-b-2 rounded-sm border-primaryDark">
           <Link href="/">
