@@ -58,7 +58,7 @@ const Login: NextPage = () => {
               <PrimaryButton
                 label="Login With Google"
                 className="w-full md:w-50"
-                click={() => signIn()}
+                click={signIn}
               />
             </form>
           </div>
