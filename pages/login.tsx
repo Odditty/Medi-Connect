@@ -55,12 +55,12 @@ const Login: NextPage = () => {
                 className="w-full md:w-50"
                 disabled={true}
               />
-              <PrimaryButton
-                label="Login With Google"
-                className="w-full md:w-50"
-                click={signIn}
-              />
             </form>
+            <PrimaryButton
+              label="Login With Google"
+              className="w-full md:w-50"
+              click={signIn}
+            />
           </div>
         </div>
       </div>
