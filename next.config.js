@@ -1,13 +1,10 @@
 const WindiCSSWebpackPlugin = require("windicss-webpack-plugin");
+const withPWA = require("next-pwa");
 
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {
+module.exports = withPWA({
   reactStrictMode: true,
-};
-
-module.exports = {
-  nextConfig,
   webpack: (config) => {
     config.plugins.push(new WindiCSSWebpackPlugin());
     return config;
@@ -15,4 +12,9 @@ module.exports = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-};
+  pwa: {
+    dest: "public",
+    register: true,
+    skipWaiting: true,
+  },
+});
