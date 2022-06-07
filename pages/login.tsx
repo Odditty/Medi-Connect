@@ -68,7 +68,7 @@ const Login: NextPage = () => {
   );
 };
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps(context: any) {
   return {
     props: {
       session: await getSession(context),
