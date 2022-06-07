@@ -12,14 +12,16 @@ export default function Header() {
         {session && session.user ? (
           <div
             className="flex items-center space-x-4 cursor-pointer"
-            onClick={signOut}
+            onClick={() => signOut()}
           >
             <span className="h-10 w-10 rounded-full overflow-hidden bg-accent">
-              <img
-                src={session.user?.image}
-                alt={session.user?.image}
-                className="h-full w-full object-cover"
-              />
+              {session.user.image && (
+                <img
+                  src={session.user?.image}
+                  alt={session.user?.image}
+                  className="h-full w-full object-cover"
+                />
+              )}
             </span>
             <span>{session.user?.name}</span>
           </div>
