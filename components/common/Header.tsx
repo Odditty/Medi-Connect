@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { signOut, useSession } from "next-auth/react";
+import Image from "next/image";
 
 export default function Header() {
   const { data: session } = useSession();
@@ -11,14 +12,15 @@ export default function Header() {
         <Link href="/">MEDI-CONNECT</Link>
         {session && session.user ? (
           <div
-            className="flex items-center space-x-4 cursor-pointer bg-light-500 rounded-full px-4 py-2"
+            className="flex items-center space-x-4 cursor-pointer bg-primaryDark rounded-full px-4 py-2"
             onClick={() => signOut()}
           >
-            <span className="h-10 w-10 rounded-full overflow-hidden ">
-              {session.user.image && (
-                <img
+            <span className="relative h-10 w-10 rounded-full overflow-hidden ">
+              {session.user.image && session.user.name && (
+                <Image
                   src={session.user?.image}
-                  alt={session.user?.image}
+                  alt={session.user?.name}
+                  layout="fill"
                   className="h-full w-full object-cover"
                 />
               )}

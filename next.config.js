@@ -17,4 +17,7 @@ module.exports = withPWA({
     register: true,
     skipWaiting: true,
   },
+  images: {
+    domains: ["lh3.googleusercontent.com"],
+  },
 });

@@ -7,12 +7,12 @@
 }
 
 @mixin dark-theme {
-  --primary-color: #000;
-  --primary-light-color: "colors.dark.600";
-  --primary-dark-color: "colors.true-gray.800";
-  --secondary-color: #fff;
-  --secondary-light-color: "colors.true-gray.500";
-  --secondary-dark-color: "colors.true-gray.100";
+  --primary-color: rgb(17, 17, 17);
+  --primary-light-color: rgb(46, 46, 46);
+  --primary-dark-color: rgb(0, 0, 0);
+  --secondary-color: rgb(248, 246, 246);
+  --secondary-light-color: #fff;
+  --secondary-dark-color: rgb(204, 204, 204);
   --error: "colors.red.700";
   --success: "colors.green.700";
   --warning: "colors.yellow.700";
@@ -20,12 +20,12 @@
 }
 
 @mixin light-theme {
-  --primary-color: #fff;
-  --primary-light-color: "colors.true-gray.50";
-  --primary-dark-color: "colors.true-gray.100";
-  --secondary-color: #000;
-  --secondary-light-color: "colors.true-gray.400";
-  --secondary-dark-color: "colors.true-gray.900";
+  --primary-color: rgb(248, 246, 246);
+  --primary-light-color: #fff;
+  --primary-dark-color: rgb(204, 204, 204);
+  --secondary-color: rgb(17, 17, 17);
+  --secondary-light-color: rgb(46, 46, 46);
+  --secondary-dark-color: rgb(0, 0, 0);
   --error: "colors.red.600";
   --success: "colors.green.600";
   --warning: "colors.yellow.600";
