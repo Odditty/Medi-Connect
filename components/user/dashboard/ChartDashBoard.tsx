@@ -22,12 +22,29 @@ Chart.register(
 type Props = {};
 
 const dataDonut = {
-  labels: ["Red", "Green", "Yellow"],
+  labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+
   datasets: [
     {
-      data: [300, 50, 100],
-      backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
-      hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
+      data: [70, 78, 69, 70, 80, 60, 70],
+      backgroundColor: [
+        "#FF6384",
+        "#36A2EB",
+        "#FFCE56",
+        "#38b933",
+        "#6d2bd6",
+        "#2ce2ca",
+        "#bc2fd8",
+      ],
+      hoverBackgroundColor: [
+        "#FF6384",
+        "#36A2EB",
+        "#FFCE56",
+        "#38b933",
+        "#6d2bd6",
+        "#2ce2ca",
+        "#bc2fd8",
+      ],
     },
   ],
 };
@@ -41,10 +58,8 @@ const dataLine = {
       lineTension: 0.1,
       backgroundColor: "rgba(75,192,192,0.4)",
       borderColor: "rgba(75,192,192,1)",
-      borderCapStyle: "butt",
       borderDash: [],
       borderDashOffset: 0.0,
-      borderJoinStyle: "miter",
       pointBorderColor: "rgba(75,192,192,1)",
       pointBackgroundColor: "#fff",
       pointBorderWidth: 1,
@@ -54,17 +69,18 @@ const dataLine = {
       pointHoverBorderWidth: 2,
       pointRadius: 1,
       pointHitRadius: 10,
-      data: [65, 59, 80, 81, 56, 55, 40],
+      data: [120, 130, 122, 140, 120, 130, 122],
     },
   ],
 };
 
 const dataBar = {
-  labels: ["1", "2", "3", "4", "5", "6"],
+  labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+
   datasets: [
     {
       label: "dataset",
-      data: [65, 59, 83, 89, 76, 55, 40],
+      data: [70, 75, 78, 80, 81, 69, 83],
       backgroundColor: [
         "rgba(255, 99, 132, 0.2)",
         "rgba(255, 159, 64, 0.2)",
@@ -90,20 +106,18 @@ const dataBar = {
 
 function ChartDashBoard({}: Props) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between items-center gap-10">
-      <div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between items-center gap-20 sm:gap-10 py-10">
+      <div className="flex flex-col items-center space-y-5">
+        <span>Sugar Level</span>
         <Doughnut data={dataDonut} width={200} height={200} />
       </div>
-      <div>
+      <div className="flex flex-col items-center space-y-5">
+        <span>Pressure Level</span>
         <Line data={dataLine} width={200} height={200} />
       </div>
-      <div>
-        <Bar
-          data={dataBar}
-          options={{
-            maintainAspectRatio: false,
-          }}
-        />
+      <div className="flex flex-col items-center space-y-5">
+        <span>Heart rate Level</span>
+        <Bar data={dataBar} width={200} height={200} />
       </div>
     </div>
   );
