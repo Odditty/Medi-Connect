@@ -43,6 +43,7 @@ function doctor({}: Props) {
                     <SecondaryButton
                       label="Reschedule "
                       className="text-accentContrast"
+                      to="/dashboard"
                     />
                   </div>
                 </div>

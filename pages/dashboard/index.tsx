@@ -42,6 +42,7 @@ function dashboard({}: Props) {
                     <SecondaryButton
                       label="View Report"
                       className="text-accentContrast"
+                      to="/dashboard/doctor"
                     />
                   </div>
                 </div>
