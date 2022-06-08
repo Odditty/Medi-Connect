@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import PrimaryButton from "../components/buttons/PrimaryButton";
 import SecondaryButton from "../components/buttons/SecondaryButton";
+import ChartDashBoard from "../components/user/dashboard/ChartDashBoard";
 import UserLayout from "../components/user/UserLayout";
 import dashBannerImage from "../public/images/dashboard/illus1.png";
 
@@ -55,6 +56,7 @@ function dashboard({}: Props) {
               </div>
             </div>
           </div>
+          <ChartDashBoard />
         </div>
       )}
     </UserLayout>
