@@ -36,6 +36,7 @@ const dataDonut = {
         "#2ce2ca",
         "#bc2fd8",
       ],
+      hoverOffset: 5,
       hoverBackgroundColor: [
         "#FF6384",
         "#36A2EB",

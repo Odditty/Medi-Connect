@@ -1,11 +1,12 @@
 import { useSession } from "next-auth/react";
 import Image from "next/image";
 import React from "react";
-import PrimaryButton from "../components/buttons/PrimaryButton";
-import SecondaryButton from "../components/buttons/SecondaryButton";
-import ChartDashBoard from "../components/user/dashboard/ChartDashBoard";
-import UserLayout from "../components/user/UserLayout";
-import dashBannerImage from "../public/images/dashboard/illus1.png";
+import PrimaryButton from "../../components/buttons/PrimaryButton";
+import SecondaryButton from "../../components/buttons/SecondaryButton";
+import ChartDashBoard from "../../components/user/dashboard/ChartDashBoard";
+import UserLayout from "../../components/user/UserLayout";
+
+import dashBannerImage from "../../public/images/dashboard/illus1.png";
 
 type Props = {};
 
@@ -33,7 +34,7 @@ function dashboard({}: Props) {
                   <h3 className="text-2xl text-accentContrast sm:text-4xl 2xl:text-6xl xl:max-w-200 max-w-80">
                     Have you Had a Routine Check this Month ?
                   </h3>
-                  <div className="flex space-x-5 my-5">
+                  <div className="flex flex-col sm:flex-row gap-5 my-5">
                     <PrimaryButton
                       label="Check Now"
                       className="text-accentContrast"

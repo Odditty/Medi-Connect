@@ -13,7 +13,7 @@ const Login: NextPage = () => {
 
   useEffect(() => {
     if (session) {
-      Router.push("/");
+      Router.push("/dashboard");
     }
   }, [session]);
 
