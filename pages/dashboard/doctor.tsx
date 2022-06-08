@@ -7,7 +7,7 @@ import ChartDashBoard from "../../components/user/dashboard/ChartDashBoard";
 import DoctorLayout from "../../components/doctor/DoctorLayout";
 
 import dashBannerImage from "../../public/images/dashboard/illus1.png";
-import DoctorDash from "../../components/doctor/DoctorDash";
+import DoctorDash from "../../components/doctor/dashboard/DoctorDash";
 
 type Props = {};
 

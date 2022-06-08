@@ -1,6 +1,5 @@
 import React from "react";
 import DoctorRating from "./DoctorRating";
-import { ChatIcon, SearchIcon, StarIcon } from "@heroicons/react/outline";
 
 type Props = {};
 

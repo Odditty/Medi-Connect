@@ -1,5 +1,6 @@
 import React from "react";
 import HeadTag from "../HeadTag";
+import Rightbar from "./RightBar";
 import Sidebar from "./Sidebar";
 
 type Props = {
@@ -15,6 +16,7 @@ export default function UserLayout({ children }: Props) {
           <Sidebar />
         </div>
         <div className="flex flex-1">{children}</div>
+        <Rightbar />
       </div>
     </>
   );

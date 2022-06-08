@@ -1,5 +1,5 @@
 import React from "react";
-import DynamicHeroIcon from "../common/DynamicHeroIcon";
+import DynamicHeroIcon from "../../common/DynamicHeroIcon";
 
 type Props = {
   icon: any;

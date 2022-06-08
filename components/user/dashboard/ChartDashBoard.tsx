@@ -108,7 +108,7 @@ const dataBar = {
 function ChartDashBoard({}: Props) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between items-center gap-20 sm:gap-10 py-10">
-      <div className="flex flex-col items-center space-y-5">
+      <div className="flex flex-col items-center space-y-10">
         <span>Sugar Level</span>
         <Doughnut data={dataDonut} width={200} height={200} />
       </div>
