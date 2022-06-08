@@ -11,7 +11,9 @@ export default function UserLayout({ children }: Props) {
     <>
       <div className="flex h-full min-h-100vh">
         <HeadTag title="Dashboard" />
-        <Sidebar />
+        <div className=" w-20 sm:w-30">
+          <Sidebar />
+        </div>
         <div className="flex flex-1">{children}</div>
       </div>
     </>
