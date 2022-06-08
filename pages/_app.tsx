@@ -1,14 +1,11 @@
 import "../styles/globals.scss";
-// import type { AppProps } from "next/app";
 import "windi.css";
 import { ThemeProvider } from "../context/theme";
 import CommonLayout from "../components/common/Layout";
-import { SessionProvider, signIn, useSession } from "next-auth/react";
+import { SessionProvider, useSession } from "next-auth/react";
 import { useEffect } from "react";
 import Loading from "../components/common/Loading";
 import Router from "next/router";
-import "@fullcalendar/common/main.css";
-import "@fullcalendar/daygrid/main.css";
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: any) {
   return (
