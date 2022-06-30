@@ -32,7 +32,7 @@
 // }
 
 ::-webkit-scrollbar {
-  @apply w-4;
+  @apply w-0;
   @apply h-4;
 }
 
@@ -91,4 +91,11 @@ a {
   @apply focus:border-accentDark;
   @apply focus:outline-none;
   @apply text-accentContrastDark;
+}
+
+.hide-scrollbar {
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 }

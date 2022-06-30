@@ -15,7 +15,7 @@ class MyDocument extends Document {
 
   render(): ReactElement {
     return (
-      <Html lang="en">
+      <Html lang="en" className="hide-scrollbar">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link

@@ -19,7 +19,7 @@ function Sidebar({}: Props) {
   const { theme, toggleTheme } = useThemeContext();
 
   return (
-    <div className="fixed top-0 left-0 h-100vh bg-primary  flex w-20 sm:w-30 px-5 py-8 shadow-md dark:shadow-gray-800">
+    <div className="fixed top-0 left-0 h-100vh bg-primary overflow-y-scroll hide-scrollbar flex w-20 sm:w-30 px-5 py-8 shadow-md dark:shadow-gray-800">
       <div className="flex flex-1 flex-col items-center">
         <div className="py-10 border-b-2 rounded-sm border-primaryDark">
           <Link href="/">

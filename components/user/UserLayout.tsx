@@ -10,13 +10,15 @@ type Props = {
 export default function UserLayout({ children }: Props) {
   return (
     <>
-      <div className="flex h-full min-h-100vh">
+      <div className="flex h-full min-h-100vh hide-scrollbar">
         <HeadTag title="Dashboard" />
         <div className=" w-20 sm:w-30">
           <Sidebar />
         </div>
         <div className="flex flex-1">{children}</div>
-        <Rightbar />
+        <div className="w-0 lg:w-80">
+          <Rightbar />
+        </div>
       </div>
     </>
   );

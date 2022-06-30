@@ -3,10 +3,9 @@ import Image from "next/image";
 import React from "react";
 import PrimaryButton from "../../components/buttons/PrimaryButton";
 import SecondaryButton from "../../components/buttons/SecondaryButton";
-import ChartDashBoard from "../../components/user/dashboard/ChartDashBoard";
 import DoctorLayout from "../../components/doctor/DoctorLayout";
 
-import dashBannerImage from "../../public/images/dashboard/illus1.png";
+import dashBannerImage from "../../public/images/dashboard/illus2.png";
 import DoctorDash from "../../components/doctor/dashboard/DoctorDash";
 
 type Props = {};
@@ -52,7 +51,7 @@ function doctor({}: Props) {
                 <Image
                   src={dashBannerImage}
                   layout="fill"
-                  objectFit="contain"
+                  objectFit="cover"
                   alt="Doctors image"
                   placeholder="blur"
                 />
